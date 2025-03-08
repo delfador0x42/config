@@ -17,6 +17,9 @@ HOMEBREW_CELLAR=/opt/homebrew/Cellar
 HOMEBREW_REPOSITORY=/opt/homebrew
 INFOPATH=/opt/homebrew/share/info:
 
+# Add Rust
+export PATH="$PATH:/Users/Tal/.cargo/bin"
+
 
 # Use afowler color theme from oh-my-zsh for filesystem
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
@@ -32,3 +35,20 @@ eval "$(/opt/homebrew/bin/zoxide init --cmd cd zsh)"
 
 # vscode code command
 alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
+
+
+
+
+# First, go to the config directory safely.
+if ! cd "$config_directory_path"; then
+    echo "Error: Failed to enter config directory."
+    exit 1
+fi
+
+# Check if there are any changes to sync.
+if [[ -n $(git status --porcelain) ]]; then
+    git add . &&
+    git commit -m "Update Config" &&
+    git push origin main ||
+    echo "Sync Config file to Github"
+fi
