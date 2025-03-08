@@ -52,3 +52,5 @@ if [[ -n $(git status --porcelain) ]]; then
     git push origin main ||
     echo "Sync Config file to Github"
 fi
+
+cd -
