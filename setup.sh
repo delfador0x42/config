@@ -33,7 +33,7 @@ if [[ -n $(git status --porcelain) ]]; then
     echo "Sync Config file to Github"
 fi
 
-cd ~
+cd ~ &> /dev/null
 EOF
 
 ## First, go to the config directory safely.
