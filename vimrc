@@ -24,3 +24,4 @@ set colorcolumn=80
 
 
 
+nnoremap q: <Nop>
