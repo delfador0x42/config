@@ -33,7 +33,7 @@ if [[ -n $(git status --porcelain) ]]; then
     git push origin main ||
     echo "Sync Config file to Github"
 fi
-echo 'Finished syncing config to github' >> $config_directory_path/zshrc
+echo 'Finished syncing config to github' 
 cd ~ &> /dev/null
 EOF
 
