@@ -40,6 +40,7 @@ alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/co
 
 
 # First, go to the config directory safely.
+echo "Syncing config to github"
 if ! cd "/Users/Tal/config"; then
     echo "Error: Failed to enter config directory."
     exit 1
@@ -52,5 +53,5 @@ if [[ -n $(git status --porcelain) ]]; then
     git push origin main ||
     echo "Sync Config file to Github"
 fi
-
+echo 'echo "Finished syncing config to github"' >> $config_directory_path/zshrc
 cd ~ &> /dev/null

@@ -19,6 +19,7 @@ echo "Config path is $config_directory_path"
 
 
 echo '# First, go to the config directory safely.' >> $config_directory_path/zshrc
+echo 'echo "Syncing config to github"' >> $config_directory_path/zshrc
 echo "if ! cd \"$config_directory_path\"; then" >> $config_directory_path/zshrc
 cat << 'EOF' >> $config_directory_path/zshrc
     echo "Error: Failed to enter config directory."
@@ -32,7 +33,7 @@ if [[ -n $(git status --porcelain) ]]; then
     git push origin main ||
     echo "Sync Config file to Github"
 fi
-
+echo 'echo "Finished syncing config to github"' >> $config_directory_path/zshrc
 cd ~ &> /dev/null
 EOF
 
