@@ -30,7 +30,7 @@ if [[ -n $(git status --porcelain) ]]; then
     echo '======================Sync Config file to Github======================'
     git add . &&
     git commit -m "Update Config" &&
-    git push origin main ||
+    git push origin main
     echo '======================Finished syncing config to github======================' 
 fi
 cd ~ &> /dev/null
