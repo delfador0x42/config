@@ -39,6 +39,7 @@ alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/co
 
 
 
+# config_directory_sync_lock
 # First, go to the config directory safely.
 if ! cd "/Users/Tal/config"; then
     echo "Error: Failed to enter config directory."
