@@ -40,7 +40,7 @@ alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/co
 
 
 # First, go to the config directory safely.
-if ! cd "$config_directory_path"; then
+if ! cd "/Users/Tal/config"; then
     echo "Error: Failed to enter config directory."
     exit 1
 fi
