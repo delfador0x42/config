@@ -39,7 +39,7 @@ alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/co
 
 # For ctrl+r to work with commands from long ago
 HISTSIZE=10000          # Number of commands kept in memory
-SAVEHIST=10000          # Number of commands saved to file
+SAVEHIST=50000          # Number of commands saved to file
 HISTFILE=~/.zsh_history # History file location (default is fine)
 setopt APPEND_HISTORY   # Appends history incrementally
 setopt SHARE_HISTORY    # Shares history across sessions
