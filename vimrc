@@ -8,6 +8,7 @@ nnoremap <F7> :silent r !date -u +"\%Y-\%m-\%d \%H:\%M:\%S"<CR>
 
 
 autocmd TextYankPost * call system('pbcopy', @")
+nnoremap p :r !pbpaste<CR>
 
 syntax on
 "set clipboard=unnamedplus
