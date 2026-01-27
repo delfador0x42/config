@@ -1,9 +1,0 @@
-syntax on
-set tabstop=8
-set shiftwidth=8
-set ai
-set number
-set hlsearch
-set ruler
-set colorcolumn=80
-set clipboard=unnamed
