@@ -47,23 +47,25 @@ esac
 export CLAUDE_CODE_MAX_OUTPUT_TOKENS=100000
 
 
-# misc notes ...
+# === misc notes ===
 
-# fix git to user master branch
-# Immortal| obsidian-vim-title-edit |git config --global init.defaultBranch
-# Immortal| obsidian-vim-title-edit |git config --global init.defaultBranch master
-# Immortal| obsidian-vim-title-edit |git config --global init.defaultBranch 
-# master
-# Immortal| obsidian-vim-title-edit |
+# Mac
+
+# git config --global init.defaultBranch
+# git config --global init.defaultBranch master
+# git config --global init.defaultBranch 
 
 
-# Immortal| ~ |cargo install basalt-tui                                   
+# sudo caffeinate -dimsu -t 999999999
+# cargo install basalt-tui                                   
 
+
+# Linux
 
 # mkdir -p ~/.config/nvim && echo "set clipboard=unnamedplus" > ~/.config/nvim/init.vim
 # systemd-inhibit sleep 3600
-#zle -N toggle_oneline_prompt
-#bindkey ^P toggle_oneline_prompt
+# zle -N toggle_oneline_prompt
+# bindkey ^P toggle_oneline_prompt
 
 
 
